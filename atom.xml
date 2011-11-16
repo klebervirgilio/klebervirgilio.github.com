@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Kleber Virgilio Correia Blog]]></title>
+  <link href="http://klebervirgilio.github.com/atom.xml" rel="self"/>
+  <link href="http://klebervirgilio.github.com/"/>
+  <updated>2011-11-16T01:51:09-02:00</updated>
+  <id>http://klebervirgilio.github.com/</id>
+  <author>
+    <name><![CDATA[Kleber Virgilio Correia]]></name>
+    <email><![CDATA[me@klebervirgilio.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Finalmente]]></title>
+    <link href="http://klebervirgilio.github.com/blog/2011/11/16/finalmente/"/>
+    <updated>2011-11-16T01:40:00-02:00</updated>
+    <id>http://klebervirgilio.github.com/blog/2011/11/16/finalmente</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Blogging like a hacker!]]></title>
+    <link href="http://klebervirgilio.github.com/blog/2011/11/15/blogging-like-a-hacker/"/>
+    <updated>2011-11-15T20:59:00-02:00</updated>
+    <id>http://klebervirgilio.github.com/blog/2011/11/15/blogging-like-a-hacker</id>
+    <content type="html"><![CDATA[
+]]></content>
+  </entry>
+  
+</feed>
