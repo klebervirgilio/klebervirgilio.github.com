@@ -1,23 +1,23 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://klebervirgilio.github.com/blog/2011/11/15/blogging-like-a-hacker/</loc>
+        <loc>http://blog.klebervirgilio.com/blog/2011/11/15/blogging-like-a-hacker/</loc>
         <lastmod>2011-11-16T01:24:01-02:00</lastmod>
     </url>
     <url>
-        <loc>http://klebervirgilio.github.com/blog/2011/11/16/finalmente/</loc>
+        <loc>http://blog.klebervirgilio.com/blog/2011/11/16/finalmente/</loc>
         <lastmod>2011-11-16T01:40:03-02:00</lastmod>
     </url>
     <url>
-        <loc>http://klebervirgilio.github.com/blog/archives/</loc>
+        <loc>http://blog.klebervirgilio.com/blog/archives/</loc>
         <lastmod>2011-11-16T01:40:03-02:00</lastmod>
     </url>
     <url>
-        <loc>http://klebervirgilio.github.com/</loc>
+        <loc>http://blog.klebervirgilio.com/</loc>
         <lastmod>2011-11-16T01:40:03-02:00</lastmod>
     </url>
     <url>
-        <loc>http://klebervirgilio.github.com/self/</loc>
+        <loc>http://blog.klebervirgilio.com/self/</loc>
         <lastmod>2011-11-16T01:24:02-02:00</lastmod>
     </url>
 </urlset>

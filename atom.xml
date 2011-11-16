@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Kleber Virgilio Correia Blog]]></title>
-  <link href="http://klebervirgilio.github.com/atom.xml" rel="self"/>
-  <link href="http://klebervirgilio.github.com/"/>
-  <updated>2011-11-16T01:51:09-02:00</updated>
-  <id>http://klebervirgilio.github.com/</id>
+  <link href="http://blog.klebervirgilio.com/atom.xml" rel="self"/>
+  <link href="http://blog.klebervirgilio.com/"/>
+  <updated>2011-11-16T09:47:27-02:00</updated>
+  <id>http://blog.klebervirgilio.com/</id>
   <author>
     <name><![CDATA[Kleber Virgilio Correia]]></name>
     <email><![CDATA[me@klebervirgilio.com]]></email>
@@ -15,18 +15,18 @@
   
   <entry>
     <title type="html"><![CDATA[Finalmente]]></title>
-    <link href="http://klebervirgilio.github.com/blog/2011/11/16/finalmente/"/>
+    <link href="http://blog.klebervirgilio.com/blog/2011/11/16/finalmente/"/>
     <updated>2011-11-16T01:40:00-02:00</updated>
-    <id>http://klebervirgilio.github.com/blog/2011/11/16/finalmente</id>
+    <id>http://blog.klebervirgilio.com/blog/2011/11/16/finalmente</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Blogging like a hacker!]]></title>
-    <link href="http://klebervirgilio.github.com/blog/2011/11/15/blogging-like-a-hacker/"/>
+    <link href="http://blog.klebervirgilio.com/blog/2011/11/15/blogging-like-a-hacker/"/>
     <updated>2011-11-15T20:59:00-02:00</updated>
-    <id>http://klebervirgilio.github.com/blog/2011/11/15/blogging-like-a-hacker</id>
+    <id>http://blog.klebervirgilio.com/blog/2011/11/15/blogging-like-a-hacker</id>
     <content type="html"><![CDATA[
 ]]></content>
   </entry>
