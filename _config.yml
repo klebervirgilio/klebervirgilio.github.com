@@ -2,23 +2,23 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://klebervirgilio.github.com
-title: My Octopress Blog
-subtitle: A blogging framework for hackers.
-author: Your Name
+url: http://blog.klebervirgilio.com
+title: Kleber Virgilio Correia's Blog
+subtitle: blogging like a hacker!
+author: Kleber Virgilio Correia
 simple_search: http://google.com/search
 
 # Default date format is "ordinal" (resulting in "July 22nd 2007")
 # You can customize the format as defined in
 # http://www.ruby-doc.org/core-1.9.2/Time.html#method-i-strftime
 # Additionally, %o will give you the ordinal representation of the day
-date_format: "ordinal"
+date_format: "%Y-%m-%d"
 
 # RSS / Email (optional) subscription links (change if using something like Feedburner)
 subscribe_rss: /atom.xml
 subscribe_email:
 # RSS feeds can list your email address if you like
-email:
+email: me@klebervirgilio.com
 
 # ----------------------- #
 #    Jekyll & Plugins     #
