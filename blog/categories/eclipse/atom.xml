@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Kleber Virgilio Correia Blog]]></title>
-  <link href="http://blog.klebervirgilio.com/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Eclipse | Kleber Virgilio Correia Blog]]></title>
+  <link href="http://blog.klebervirgilio.com/blog/categories/eclipse/atom.xml" rel="self"/>
   <link href="http://blog.klebervirgilio.com/"/>
   <updated>2012-01-13T16:30:41-02:00</updated>
   <id>http://blog.klebervirgilio.com/</id>
@@ -43,7 +43,7 @@
 
 <h2>Instalar o Android Development Tools (ADT) plugin para o Eclipse</h2>
 
-<p>O Android fornece um plugin poderoso para nos ajudar no processo de crição de novos projetos Android, exportação de APK&#8217;s, debugging e UI da aplicação.</p>
+<p>O Android fornece um plugin poderoso para nos ajudar no processo de crição de novos projetos Android, exportação de APK's, debugging e UI da aplicação.</p>
 
 <p>Usar o Eclipse + ADT é a maneira mais rápida para começar com o Android. #googleTip</p>
 
@@ -58,7 +58,7 @@
 </ul>
 
 
-<p>Vamos seguir os sábios conselhos do autor da documentação e usar um desses Eclipse&#8217;s #googleTip</p>
+<p>Vamos seguir os sábios conselhos do autor da documentação e usar um desses Eclipse's #googleTip</p>
 
 <ul>
 <li>Eclipse IDE para Desenvolvedores Java.</li>
@@ -69,12 +69,12 @@
 </ul>
 
 
-<p>Chega de blá-blá-blá&#8230; borá lá instalar esse plugin.</p>
+<p>Chega de blá-blá-blá... borá lá instalar esse plugin.</p>
 
 <ol>
-<li>Inicie o Eclipse, em seguida clique em Help > Help > Install New Software&#8230;</li>
+<li>Inicie o Eclipse, em seguida clique em Help > Help > Install New Software...</li>
 <li>Clique em Add no canto superior direito</li>
-<li>Na janela que irá aparecer preencha o campo Name com &#8220;ADT Plugin&#8221; em seguida preencha o próximo campo com essa url:
+<li>Na janela que irá aparecer preencha o campo Name com "ADT Plugin" em seguida preencha o próximo campo com essa url:
 https://dl-ssl.google.com/android/eclipse/ depois clique em OK.</li>
 </ol>
 
@@ -96,7 +96,7 @@ https://dl-ssl.google.com/android/eclipse/ depois clique em OK.</li>
 <ol>
 <li>Clique em Eclipse > Preferences ou  ⌘+,</li>
 <li>Selecione Android no Painel Esquerdo, Um janela do google pedindo suas estatisticas de uso irá aparecer - Faça sua escolha e vamos em frente.</li>
-<li>Para a opção SDK Location, clique em Browse&#8230; e localize o diretório do SDK.</li>
+<li>Para a opção SDK Location, clique em Browse... e localize o diretório do SDK.</li>
 <li>Clique em Aplicar, em seguida OK.</li>
 </ol>
 
@@ -108,9 +108,9 @@ https://dl-ssl.google.com/android/eclipse/ depois clique em OK.</li>
 <p>Um AVD consiste em:</p>
 
 <ul>
-<li>Especificação de Hardware: Define as funcionalidades de hardware do dipositio. Por exemplo: Se ele vai ou não ter camera, se o teclado é virtual ou físico, quantidade de memória e muito mais&#8230;</li>
+<li>Especificação de Hardware: Define as funcionalidades de hardware do dipositio. Por exemplo: Se ele vai ou não ter camera, se o teclado é virtual ou físico, quantidade de memória e muito mais...</li>
 <li>Mapeia uma imagem do sistema: Possibilidade de definir que plataforma Android vai rodar no AVD e qual a sua versão e também versões customizadas do Android (pacotes disponíveis no add-ons)</li>
-<li>Outras opções: Manipulação de &#8216;Skin&#8217;(Não achei uma tradução boa) >> Oferece o controle sobre as dimessões da tela, aparência e muito mais. É possível ainda setar o SD card que será usado junto com o AVD.</li>
+<li>Outras opções: Manipulação de 'Skin'(Não achei uma tradução boa) >> Oferece o controle sobre as dimessões da tela, aparência e muito mais. É possível ainda setar o SD card que será usado junto com o AVD.</li>
 <li>Área de Armazenamento Dedicado: Nessa área são armazenadas os dados dos usuários (apliações instaladas,etc) e o SD card emulado.</li>
 </ul>
 
@@ -133,16 +133,16 @@ Elas são sempre compatíveis com versões anteriores mas garanta que seu ambien
 
 <p><strong>Android platforms</strong> ou <strong>Plataformas Android</strong> (Sem este, Sem App Android)
 São as versões do Android com as quais o seu aplicativo será desenvolvido e testado.
-Com elas você criará o seus AVD&#8217;s, garantindo que sua app rode sem problemas no em todas as versões do Android que você se propõe a atender!</p>
+Com elas você criará o seus AVD's, garantindo que sua app rode sem problemas no em todas as versões do Android que você se propõe a atender!</p>
 
 <p><strong>USB Driver for Windows</strong> ou <strong>Driver USB para Windows</strong> (Somente para windows)</p>
 
-<p><strong>Samples</strong> ou <strong>Exemplos de Códigos</strong> (Não precisa baixar&#8230; mas eu baixaria! =P)
+<p><strong>Samples</strong> ou <strong>Exemplos de Códigos</strong> (Não precisa baixar... mas eu baixaria! =P)
 Para quem tá começando é essencial! Servirá como referencia para o seu código!</p>
 
-<p><strong>Documentation</strong> ou <strong>Documentação</strong> (Não precisa baixar&#8230; mas eu baixaria! Sempre bom!! =P)</p>
+<p><strong>Documentation</strong> ou <strong>Documentação</strong> (Não precisa baixar... mas eu baixaria! Sempre bom!! =P)</p>
 
-<p><strong>Add-ons</strong>, <strong>Código de Terceiros</strong> e <strong>Google API&#8217;s</strong>
+<p><strong>Add-ons</strong>, <strong>Código de Terceiros</strong> e <strong>Google API's</strong>
 São códigos  que facilitam a vida do programador!
 Como Google Maps e Ferramentas de Publicidade.</p>
 
@@ -152,11 +152,11 @@ Como Google Maps e Ferramentas de Publicidade.</p>
 <li>Na áerea Extras, cheque cada uma das opções e veja se será útil para o seu projeto!</li>
 <li>Clique em Install 99 packages</li>
 <li>Aceite os termos</li>
-<li>Espere&#8230;.. isso pode demorar! =P</li>
+<li>Espere..... isso pode demorar! =P</li>
 </ol>
 
 
-<p>Feito isso&#8230; bora por as ideias no papel, pensar na experiência de usuário e codar!</p>
+<p>Feito isso... bora por as ideias no papel, pensar na experiência de usuário e codar!</p>
 ]]></content>
   </entry>
   

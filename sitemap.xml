@@ -1,20 +1,18 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <urlset xmlns='http://www.sitemaps.org/schemas/sitemap/0.9'>
     <url>
-        <loc>http://blog.klebervirgilio.com/blog/2011/11/15/blogging-like-a-hacker/</loc>
-        <lastmod>2011-11-16T01:24:01-02:00</lastmod>
-    </url>
-    <url>
-        <loc>http://blog.klebervirgilio.com/blog/2011/11/16/finalmente/</loc>
-        <lastmod>2011-11-16T01:40:03-02:00</lastmod>
+        <loc>
+            http://blog.klebervirgilio.com/blog/2012/01/13/configurando-seu-ambinte-de-desenvolvimento-android-no-mac-os-lion/
+        </loc>
+        <lastmod>2012-01-13T16:29:02-02:00</lastmod>
     </url>
     <url>
         <loc>http://blog.klebervirgilio.com/blog/archives/</loc>
-        <lastmod>2011-11-16T01:40:03-02:00</lastmod>
+        <lastmod>2012-01-13T16:29:02-02:00</lastmod>
     </url>
     <url>
         <loc>http://blog.klebervirgilio.com/</loc>
-        <lastmod>2011-11-16T01:40:03-02:00</lastmod>
+        <lastmod>2012-01-13T16:29:02-02:00</lastmod>
     </url>
     <url>
         <loc>http://blog.klebervirgilio.com/self/</loc>
