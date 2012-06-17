@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Kleber Virgilio Correia Blog</title>
+  <title>Ruby &amp;:foo behind the scenes. - Kleber Virgilio Correia Blog</title>
   <meta name="author" content="Kleber Virgilio Correia">
 
   
@@ -19,7 +19,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://blog.klebervirgilio.com">
+  <link rel="canonical" href="http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -73,15 +73,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/06/15/ruby-and-foo-behind-the-scenes/">Ruby &amp;:foo Behind the Scenes.</a></h1>
+      <h1 class="entry-title">Ruby &amp;:foo Behind the Scenes.</h1>
     
     
       <p class="meta">
@@ -99,14 +96,14 @@
 
 <time datetime="2012-06-15T21:23:00-03:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
         
-         | <a href="/blog/2012/06/15/ruby-and-foo-behind-the-scenes/#disqus_thread">Comments</a>
+         | <a href="#disqus_thread">Comments</a>
         
       </p>
     
   </header>
 
 
-  <div class="entry-content"><h2>Proc&#8217;ing&#8217; in Ruby</h2>
+<div class="entry-content"><h2>Proc&#8217;ing&#8217; in Ruby</h2>
 
 <p>Let&#8217;s dig a little bit deep in the Ruby world!</p>
 
@@ -189,22 +186,16 @@ In case of the <strong>foo</strong> isn&#8217;t a <strong>proc</strong> ruby sen
 
 <p>Find more in the <a href="http://extensions.rubyforge.org/rdoc/index.html">Ruby Extensions Project</a></p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2012/01/13/configurando-seu-ambinte-de-desenvolvimento-android-no-mac-os-lion/">Configurando Seu Ambinte De Desenvolvimento Android No Mac OS Lion</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Kleber Virgilio Correia</span></span>
+
+      
 
 
 
@@ -216,167 +207,48 @@ In case of the <strong>foo</strong> isn&#8217;t a <strong>proc</strong> ruby sen
   
 
 
-<time datetime="2012-01-13T16:04:00-02:00" pubdate data-updated="true">Jan 13<span>th</span>, 2012</time>
-        
-         | <a href="/blog/2012/01/13/configurando-seu-ambinte-de-desenvolvimento-android-no-mac-os-lion/#disqus_thread">Comments</a>
-        
-      </p>
+<time datetime="2012-06-15T21:23:00-03:00" pubdate data-updated="true">Jun 15<span>th</span>, 2012</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/ruby/'>ruby</a>
+  
+</span>
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><h2>Introdução</h2>
-
-<p>Esse é um simples tutorial sobre como deixar o seu Mac no esquema para fazer aplicativos Android. =P</p>
-
-<p>Como a <a href="http://developer.android.com/sdk/installing.html">documentação original</a> sugere, seguiremos em 5 simples passos! #googleTip</p>
-
-<h2>Prepare o seu Ambiente de Desenvolvimento Android</h2>
-
-<ul>
-<li><a href="http://developer.android.com/sdk/requirements.html">Requisitos de Sitema</a></li>
-<li>Mac OS X 10.5.8 ou mais avaçado (x86)</li>
-<li>Certifique-se de que o <a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html">JDK</a> esteja instalado.</li>
-</ul>
-
-
-<h2>Faça o Download do SDK</h2>
-
-<p><em>OBS: Note que o SDK não ainda não é o ambiente de desenvolvimento, ele fornecerá as ferramentas que tornarão possíveis nós configurarmos o ambiente de desenvolvimento.</em></p>
-
-<p>Faça o download direto: <a href="http://dl.google.com/android/android-sdk_r16-macosx.zip">Mac OS X SDK</a></p>
-
-<p><a href="http://developer.android.com/sdk/index.html">Veja a lista completa de SDKs.</a></p>
-
-<h2>Instalar o Android Development Tools (ADT) plugin para o Eclipse</h2>
-
-<p>O Android fornece um plugin poderoso para nos ajudar no processo de crição de novos projetos Android, exportação de APK&#8217;s, debugging e UI da aplicação.</p>
-
-<p>Usar o Eclipse + ADT é a maneira mais rápida para começar com o Android. #googleTip</p>
-
-<h3><a href="http://developer.android.com/sdk/requirements.html">Requisitos</a></h3>
-
-<h3>Eclipse IDE</h3>
-
-<ul>
-<li>Eclipse 3.6 (Helios) ou um mais atual.</li>
-<li>OBS: Eclipse 3.5 (Galileo) não suporta as ultimas versões do ADT.</li>
-<li>Eclipse <a href="http://www.eclipse.org/jdt/">JDT</a> plugin (incluído na maioria do pacotes de instalação do Eclipse).</li>
-</ul>
-
-
-<p>Vamos seguir os sábios conselhos do autor da documentação e usar um desses Eclipse&#8217;s #googleTip</p>
-
-<ul>
-<li>Eclipse IDE para Desenvolvedores Java.</li>
-<li>Eclipse Classíco.</li>
-<li>Eclipse IDE para Desenvolvedores Java EE.</li>
-<li>JDK 5 ou JDK 6 (só o JRE não é suficiente).</li>
-<li>Android Development Tools Plugin.</li>
-</ul>
-
-
-<p>Chega de blá-blá-blá&#8230; borá lá instalar esse plugin.</p>
-
-<ol>
-<li>Inicie o Eclipse, em seguida clique em Help > Help > Install New Software&#8230;</li>
-<li>Clique em Add no canto superior direito</li>
-<li>Na janela que irá aparecer preencha o campo Name com &#8220;ADT Plugin&#8221; em seguida preencha o próximo campo com essa url:
-https://dl-ssl.google.com/android/eclipse/ depois clique em OK.</li>
-</ol>
-
-
-<p><em>OBS: Se você tiver problemas com o download do plugin, tente usar essa url: http://dl-ssl.google.com/android/eclipse/</em></p>
-
-<ol>
-<li>Na janela de Available Software selecione a opção Developer Tools e clique me Next.</li>
-<li>A próxima janela mostrará todos os softwares que serão baixados. Clique em Next.</li>
-<li>Leia e aceite os termos. Clique em Finish.</li>
-<li>Restart o Eclipse.</li>
-</ol>
-
-
-<h3>Configurações.</h3>
-
-<h4>Vamos mudar algumas preferências do ADT.</h4>
-
-<ol>
-<li>Clique em Eclipse > Preferences ou  ⌘+,</li>
-<li>Selecione Android no Painel Esquerdo, Um janela do google pedindo suas estatisticas de uso irá aparecer - Faça sua escolha e vamos em frente.</li>
-<li>Para a opção SDK Location, clique em Browse&#8230; e localize o diretório do SDK.</li>
-<li>Clique em Aplicar, em seguida OK.</li>
-</ol>
-
-
-<h2>Entendendo o que é esse tal de AVD?</h2>
-
-<p>Um Android Virtual Device basicamente pode ser entendido como um conjunto de configurações de hardware e software que será emulado pelo Android Emulator.</p>
-
-<p>Um AVD consiste em:</p>
-
-<ul>
-<li>Especificação de Hardware: Define as funcionalidades de hardware do dipositio. Por exemplo: Se ele vai ou não ter camera, se o teclado é virtual ou físico, quantidade de memória e muito mais&#8230;</li>
-<li>Mapeia uma imagem do sistema: Possibilidade de definir que plataforma Android vai rodar no AVD e qual a sua versão e também versões customizadas do Android (pacotes disponíveis no add-ons)</li>
-<li>Outras opções: Manipulação de &#8216;Skin&#8217;(Não achei uma tradução boa) >> Oferece o controle sobre as dimessões da tela, aparência e muito mais. É possível ainda setar o SD card que será usado junto com o AVD.</li>
-<li>Área de Armazenamento Dedicado: Nessa área são armazenadas os dados dos usuários (apliações instaladas,etc) e o SD card emulado.</li>
-</ul>
-
-
-<p>A maneira mais fácil de criar um AVD é através da Interface Gráfica do AVD Manager[http://developer.android.com/guide/developing/devices/managing-avds.html] caso voce seje um UNIX-LOVERS também é possível cria-los|las vai command line, confira a documentação[http://developer.android.com/guide/developing/devices/managing-avds-cmdline.html]</p>
-
-<h2>Adicionando Plataformas e outros componentes.</h2>
-
-<p>Vamos lá!! O que são esses componente? O que baixar? Pra que?</p>
-
-<p><strong>SDK-tools</strong> ou <strong>Ferramentas do SDK </strong> (Sem este, Sem App Android)
-Se você seguiu esse tutorial do desde o inicio relaxe, ele já está instalado!
-Caso contrario, Instale! Sem ele, sem app android!
-Garanta que ele sempre esteje atualizado.</p>
-
-<p><strong>SDK Platform-tools</strong> ou <strong>SDK Ferramentas de Plataforma</strong> (Sem este, Sem App Android)
-São ferramentas necessárias para plataforma.
-Normalmente elas são atualizadas quando novas plataformas são lançadas.
-Elas são sempre compatíveis com versões anteriores mas garanta que seu ambiente sempre esteje atualizado com a ultima versão.</p>
-
-<p><strong>Android platforms</strong> ou <strong>Plataformas Android</strong> (Sem este, Sem App Android)
-São as versões do Android com as quais o seu aplicativo será desenvolvido e testado.
-Com elas você criará o seus AVD&#8217;s, garantindo que sua app rode sem problemas no em todas as versões do Android que você se propõe a atender!</p>
-
-<p><strong>USB Driver for Windows</strong> ou <strong>Driver USB para Windows</strong> (Somente para windows)</p>
-
-<p><strong>Samples</strong> ou <strong>Exemplos de Códigos</strong> (Não precisa baixar&#8230; mas eu baixaria! =P)
-Para quem tá começando é essencial! Servirá como referencia para o seu código!</p>
-
-<p><strong>Documentation</strong> ou <strong>Documentação</strong> (Não precisa baixar&#8230; mas eu baixaria! Sempre bom!! =P)</p>
-
-<p><strong>Add-ons</strong>, <strong>Código de Terceiros</strong> e <strong>Google API&#8217;s</strong>
-São códigos  que facilitam a vida do programador!
-Como Google Maps e Ferramentas de Publicidade.</p>
-
-<ol>
-<li>Dentro do eclipse, clique em: Window > Android SDK Manager</li>
-<li>Selecione as Versões 2.1 e 2.3 (fique avontade para baixar o que voce quiser! =])</li>
-<li>Na áerea Extras, cheque cada uma das opções e veja se será útil para o seu projeto!</li>
-<li>Clique em Install 99 packages</li>
-<li>Aceite os termos</li>
-<li>Espere&#8230;.. isso pode demorar! =P</li>
-</ol>
-
-
-<p>Feito isso&#8230; bora por as ideias no papel, pensar na experiência de usuário e codar!</p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes/" data-via="" data-counturl="http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
 </div>
-  
-  
 
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2012/01/13/configurando-seu-ambinte-de-desenvolvimento-android-no-mac-os-lion/" title="Previous Post: Configurando seu ambinte de desenvolvimento Android no Mac OS Lion">&laquo; Configurando seu ambinte de desenvolvimento Android no Mac OS Lion</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </div>
+  </section>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -397,7 +269,7 @@ Como Google Maps e Ferramentas de Publicidade.</p>
 <section>
   <h1>Github Repos</h1>
   <ul id="gh_repos">
-    <li class="loading">Status updating&#8230;</li>
+    <li class="loading">Status updating...</li>
   </ul>
   
   <a href="https://github.com/klebervirgilio">@klebervirgilio</a> on Github
@@ -438,6 +310,7 @@ Como Google Maps e Ferramentas de Publicidade.</p>
   
 </aside>
 
+
     </div>
   </div>
   <footer role="contentinfo"><p>
@@ -452,7 +325,10 @@ Como Google Maps e Ferramentas de Publicidade.</p>
       var disqus_shortname = 'klebervirgiliosblog';
       
         
-        var disqus_script = 'count.js';
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes/';
+        var disqus_url = 'http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes/';
+        var disqus_script = 'embed.js';
       
     (function () {
       var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;

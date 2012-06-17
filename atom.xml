@@ -4,7 +4,7 @@
   <title><![CDATA[Kleber Virgilio Correia Blog]]></title>
   <link href="http://blog.klebervirgilio.com/atom.xml" rel="self"/>
   <link href="http://blog.klebervirgilio.com/"/>
-  <updated>2012-01-13T16:30:41-02:00</updated>
+  <updated>2012-06-17T14:19:19-03:00</updated>
   <id>http://blog.klebervirgilio.com/</id>
   <author>
     <name><![CDATA[Kleber Virgilio Correia]]></name>
@@ -12,6 +12,96 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ruby &amp;:foo behind the scenes.]]></title>
+    <link href="http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes/"/>
+    <updated>2012-06-15T21:23:00-03:00</updated>
+    <id>http://blog.klebervirgilio.com/blog/2012/06/15/ruby-and-foo-behind-the-scenes</id>
+    <content type="html"><![CDATA[<h2>Proc&#8217;ing&#8217; in Ruby</h2>
+
+<p>Let&#8217;s dig a little bit deep in the Ruby world!</p>
+
+<p>How many times have you seen this:</p>
+
+<figure class='code'><figcaption><span>#map  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="ss">:to_s</span><span class="p">)</span> <span class="c1">#=&gt; [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>What I have never realized that also it&#8217;s possible use something like this:</p>
+
+<figure class='code'><figcaption><span>proc  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="nb">to_s</span> <span class="o">=</span> <span class="nb">proc</span> <span class="p">{</span><span class="o">|</span><span class="n">item</span><span class="o">|</span> <span class="n">item</span><span class="o">.</span><span class="n">to_s</span><span class="o">*</span><span class="mi">3</span> <span class="p">}</span>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="nb">to_s</span><span class="p">)</span> <span class="c1">#=&gt; [&quot;111&quot;,&quot;222&quot;,&quot;333&quot;]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>or even&#8230;</p>
+
+<figure class='code'><figcaption><span>Class  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">class</span> <span class="nc">Foo</span>
+</span><span class='line'>  <span class="k">def</span>  <span class="nf">to_proc</span>
+</span><span class='line'>      <span class="nb">proc</span> <span class="p">{</span><span class="o">|</span><span class="n">object</span><span class="o">|</span> <span class="n">object</span><span class="o">.</span><span class="n">to_s</span> <span class="p">}</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="no">Foo</span><span class="o">.</span><span class="n">new</span><span class="p">)</span> <span class="c1">#=&gt; [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>I swear this is the last example. LOL.. ♥ ♥ ♥</p>
+
+<figure class='code'><figcaption><span>Module  </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">module</span> <span class="nn">Bar</span>
+</span><span class='line'>  <span class="k">def</span>  <span class="nf">to_proc</span>
+</span><span class='line'>      <span class="nb">proc</span> <span class="p">{</span><span class="o">|</span><span class="n">object</span><span class="o">|</span> <span class="n">object</span><span class="o">.</span><span class="n">to_s</span> <span class="p">}</span>
+</span><span class='line'>  <span class="k">end</span>
+</span><span class='line'><span class="k">end</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="o">].</span><span class="n">map</span><span class="p">(</span><span class="o">&amp;</span><span class="no">Class</span><span class="o">.</span><span class="n">new</span><span class="o">.</span><span class="n">extend</span><span class="p">(</span><span class="no">Bar</span><span class="p">))</span> <span class="c1">#=&gt; [&quot;1&quot;,&quot;2&quot;,&quot;3&quot;]</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>So, what happen behind the scenes?</p>
+
+<p>For sure you must have realized the <strong>to_proc</strong> in all the code implemented above.</p>
+
+<p>When you pass the <strong>&amp;foo</strong>, the ruby pass it as a block to the <strong>map</strong>.
+In case of the <strong>foo</strong> isn&#8217;t a <strong>proc</strong> ruby sends the <strong>to_proc</strong> message to the object in order to obtain the proc object and then pass it as a block to the the map.</p>
+
+<p>When you pass a symbol, <strong>&amp;:to_s</strong> ruby sends the to_proc message to the symbol witch have an implementation like that:</p>
+
+<figure class='code'><figcaption><span>Symbol#to_proc </span></figcaption>
+ <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='ruby'><span class='line'><span class="k">def</span> <span class="nf">to_proc</span>
+</span><span class='line'>  <span class="nb">proc</span> <span class="p">{</span> <span class="o">|</span><span class="n">obj</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="o">|</span> <span class="n">obj</span><span class="o">.</span><span class="n">send</span><span class="p">(</span><span class="nb">self</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">)</span> <span class="p">}</span>
+</span><span class='line'><span class="k">end</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Find more in the <a href="http://extensions.rubyforge.org/rdoc/index.html">Ruby Extensions Project</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Configurando seu ambinte de desenvolvimento Android no Mac OS Lion]]></title>
